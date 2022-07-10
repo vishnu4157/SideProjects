@@ -253,29 +253,6 @@ def bot_plays(update: Update, context: CallbackContext):
 			f"click on /new to begin a new game"
 			)
 
-
-def gmail_url(update: Update, context: CallbackContext):
-	update.message.reply_text(
-		"Your gmail link here (I am not\
-		giving mine one for security reasons)")
-
-
-def youtube_url(update: Update, context: CallbackContext):
-	update.message.reply_text("Youtube Link =>\
-	https://www.youtube.com/")
-
-
-def linkedIn_url(update: Update, context: CallbackContext):
-	update.message.reply_text(
-		"LinkedIn URL => \
-		https://www.linkedin.com/in/dwaipayan-bandyopadhyay-007a/")
-
-
-def geeks_url(update: Update, context: CallbackContext):
-	update.message.reply_text(
-		"GeeksforGeeks URL => https://www.geeksforgeeks.org/")
-
-
 def unknown(update: Update, context: CallbackContext):
 	update.message.reply_text(
 		"Sorry '%s' is not a valid command" % update.message.text)
