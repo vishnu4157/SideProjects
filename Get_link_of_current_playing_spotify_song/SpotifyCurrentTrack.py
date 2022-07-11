@@ -5,11 +5,9 @@ from telegram.ext.callbackcontext import CallbackContext
 from telegram.ext.commandhandler import CommandHandler
 
 ENDPOINT_URL = 'https://api.spotify.com/v1/me/player/currently-playing'
-KEY = "BQDl01EEz1phvdKbuCAeAmijK-VWPsc1uKU9k8Yiv3mqDzEGnWC6vg0AXtxFen5GLDppx9-VS6J5Py55gY" \
-      "-iUtcGOozNHzrHvUqC_0MOsbgCRLSdFUFdDrF0MonQR1aCb6xgMgoKpYJYEZhWCwG_Ki_Dyty" \
-      "-4ugviza_gJ62OxBMDCLjt6F7neE5XoFnVmLRinuDsP79PqM_ "
-Token = "5437914227:AAHmLagra5J5tKfF2PaohR7uHoez_FdCWnM"
-updater = Updater("5437914227:AAHmLagra5J5tKfF2PaohR7uHoez_FdCWnM", use_context=True)
+KEY = "HIDDEN " #key and toekn hidden for obvious reasons
+Token = "HIDDEN"
+updater = Updater("Token", use_context=True)
 
 def playing(update: Update, context: CallbackContext):
     linkup = main()
