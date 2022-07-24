@@ -94,11 +94,11 @@ def player_move(board):
 def bot_first_move(board):
     main = [1,3,7,9]
     rndm = random.randint(0,3)
+    if board[4] == 5:
+        return 4
     while(board[main[rndm]-1]=="X" or board[main[rndm]-1]=="X"):
         rndm = random.randint(0,3)
     return main[rndm]-1
-
-
 
 def tic_tac_toe():
     board = [1, 2, 3, 4, 5, 6, 7, 8, 9]
