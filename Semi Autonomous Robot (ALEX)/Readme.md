@@ -5,8 +5,10 @@ Documentations for individual modules are available within their respective dire
 
 General setup procedures
 On both devices:
+'''
 export ROS_IP=<LOCAL-IP-ADDRESS>
 export ROS_MASTER_URI=<MASTER-IP-ADDRESS>
+'''
 On RPi
 Terminal window 1: roslaunch rplidar_ros rplidar.launch to start a rplidar node which will send scan results to the ros master node as defined by ROS_MASTER_URI
 Terminal window 2: cd <RPi module directory> && ./main to start main RPi program
@@ -242,6 +244,8 @@ Next, we test ROS across the two machines following this http://wiki.ros.org/ROS
 
 Note: we use the above mentioned local config for both machines
 After verifying that our two machines can communicate over ROS, we can simply use the rplidar_ros package which conveniently has two launch files for our needs
+  
+ '''
 
 rplidar.launch:
 
@@ -307,4 +311,6 @@ E-mail: kint.zhao@slamtec.com
 
   </node>
 </launch>
+  
+ '''
 As you can see, view_slam.launch, which we run on the remote operator device, does most of the work as it runs an rviz node i.e. process that runs enviornment mapping visualization, and runs hector SLAM algorithms on the data it receives from the rplidar node running on the RPi
