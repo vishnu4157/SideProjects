@@ -28,7 +28,7 @@ arr = [10,9,8,7,6,5,4,3,2,1]
 
 def visual_sel_sort(arr):
     u = np.arange(0, 10, 1)
-    ins(arr,0,10,u)
+    sel(arr,0,10,u)
     plt.show()
     print(arr)
 
